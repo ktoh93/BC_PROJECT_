@@ -1,4 +1,4 @@
-# BC_Contest (Django) — 공공 체육시설 조회/관리 + 예약 운영 + 안전점검 데이터 동기화
+# BC_Contest (Django) — 공공 체육시설 조회/관리 + 예약 운영
 
 ## 1) 프로젝트 개요
 
@@ -13,11 +13,14 @@
 ### 시설관리(관리자/사용자) 기능 구현
 
 - **사용자 시설 화면**
+    - <img width="441" height="394" alt="image" src="https://github.com/user-attachments/assets/e1883313-83d4-4ba0-852d-91c168509ec1" />
     - 시설 목록 조회/검색/지역 필터 및 페이지네이션
     - 시설 상세 조회(공공시설 DB + 등록된 커스텀 정보(FacilityInfo) 우선 병합)
     - 시설 댓글 작성(공통 Comment 모델 사용)
     - 지도(카카오) 연동을 위한 좌표 처리 및 지오코딩 캐싱
 - **관리자 커스텀 페이지**
+    - <img width="837" height="414" alt="image" src="https://github.com/user-attachments/assets/7a306eca-e289-4a7b-9ae4-ad19f39d0b84" />
+    - <img width="895" height="418" alt="image" src="https://github.com/user-attachments/assets/cf8daa9a-a580-4cde-8e6f-8674158e9fd9" />
     - 시설 추가/등록/목록/상세/수정/삭제
     - 시설 첨부파일 업로드/다운로드
     - 예약 현황 관리 및 타임슬롯 취소 API 제공
@@ -30,7 +33,7 @@
 - 네트워크 오류 대비 retry/timeout 적용 및 트랜잭션 처리
 
 ### AWS 인프라 구성/배포
-
+- <img width="846" height="283" alt="image" src="https://github.com/user-attachments/assets/22a7b27f-7c8d-471f-988a-115f2d69a289" />
 - **AWS EC2 + RDS(MySQL)** 구성
 - **Nginx 리버스 프록시 + Gunicorn(Wsgi)** 기반 배포
 - DB 연결/보안 설정/환경변수 기반 운영 설정 적용
