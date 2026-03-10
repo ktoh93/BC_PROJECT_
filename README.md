@@ -8,39 +8,7 @@
 
 ---
 
-## 2) 내가 담당한 역할 (핵심 기여)
-
-### 시설관리(관리자/사용자) 기능 구현
-
-- **사용자 시설 화면**
-    - <img width="441" height="394" alt="image" src="https://github.com/user-attachments/assets/e1883313-83d4-4ba0-852d-91c168509ec1" />
-    - 시설 목록 조회/검색/지역 필터 및 페이지네이션
-    - 시설 상세 조회(공공시설 DB + 등록된 커스텀 정보(FacilityInfo) 우선 병합)
-    - 시설 댓글 작성(공통 Comment 모델 사용)
-    - 지도(카카오) 연동을 위한 좌표 처리 및 지오코딩 캐싱
-- **관리자 커스텀 페이지**
-    - <img width="837" height="414" alt="image" src="https://github.com/user-attachments/assets/7a306eca-e289-4a7b-9ae4-ad19f39d0b84" />
-    - <img width="895" height="418" alt="image" src="https://github.com/user-attachments/assets/cf8daa9a-a580-4cde-8e6f-8674158e9fd9" />
-    - 시설 추가/등록/목록/상세/수정/삭제
-    - 시설 첨부파일 업로드/다운로드
-    - 예약 현황 관리 및 타임슬롯 취소 API 제공
-    - 종목(Sports) 관리(추가/삭제/선택 저장)
-
-### 스케줄러 기반 공공 데이터 동기화(update_facility)
-
-- Django management command로 공공 API를 페이지 단위로 수집
-- MySQL `INSERT ... ON DUPLICATE KEY UPDATE` 기반 UPSERT로 대용량 갱신 안정화
-- 네트워크 오류 대비 retry/timeout 적용 및 트랜잭션 처리
-
-### AWS 인프라 구성/배포
-- <img width="846" height="283" alt="image" src="https://github.com/user-attachments/assets/22a7b27f-7c8d-471f-988a-115f2d69a289" />
-- **AWS EC2 + RDS(MySQL)** 구성
-- **Nginx 리버스 프록시 + Gunicorn(Wsgi)** 기반 배포
-- DB 연결/보안 설정/환경변수 기반 운영 설정 적용
-
----
-
-## 3) 기술 스택
+## 2) 기술 스택
 
 - Backend: **Django (settings 기준: Django 5.2.8)**
 - DB: **MySQL (RDS)**
@@ -51,7 +19,7 @@
 
 ---
 
-## 4) 시스템 아키텍처 (요약)
+## 3) 시스템 아키텍처 (요약)
 
 - Client(브라우저)
     - 사용자: 시설 목록/상세/댓글
@@ -67,7 +35,7 @@
 
 ---
 
-## 5) 주요 기능
+## 4) 주요 기능
 
 ### 사용자 기능 (facility 앱)
 
@@ -90,7 +58,7 @@
 
 ---
 
-## 6) 실행 방법 (로컬)
+## 5) 실행 방법 (로컬)
 
 ### 필수 환경변수(.env)
 
@@ -108,7 +76,7 @@ python manage.py runserver
 
 ---
 
-## 7) 트러블슈팅 (실제 코드/운영 포인트 기반)
+## 6) 트러블슈팅 (실제 코드/운영 포인트 기반)
 
 1. **환경변수 누락으로 기능 실패**
 - `DATA_API_KEY` 없으면 `update_facility`가 즉시 종료하도록 방어 로직이 있음(운영 배치에서 가장 흔한 장애 포인트)
@@ -126,7 +94,7 @@ python manage.py runserver
 
 ---
 
-## 8) 디렉터리 가이드(내 담당 중심)
+## 7) 디렉터리 가이드(내 담당 중심)
 
 - `BC/facility/`
     - `views.py`: 사용자 목록/상세/댓글, 지도 좌표 처리/캐싱
