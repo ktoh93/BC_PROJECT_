@@ -79,7 +79,7 @@ python manage.py runserver
 ## 6) 트러블슈팅 (실제 코드/운영 포인트 기반)
 
 1. **환경변수 누락으로 기능 실패**
-- `DATA_API_KEY` 없으면 `update_facility`가 즉시 종료하도록 방어 로직이 있음(운영 배치에서 가장 흔한 장애 포인트)
+- `DATA_API_KEY` 없으면 `update_facility`가 즉시 종료하도록 방어 로직이 있음
 - `DB_*`, `KAKAO_SCRIPT_KEY` 누락 시 페이지 렌더/DB 연결에서 문제 발생 가능
     
     → 배포 시 `.env` 또는 시스템 환경변수 주입을 표준화
