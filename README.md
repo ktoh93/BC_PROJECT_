@@ -1,3 +1,6 @@
+
+<img width="186" height="91" alt="스크린샷 2025-12-19 143006" src="https://github.com/user-attachments/assets/643a1033-66a7-48c6-b3de-8234cb36d45a" />
+
 # BC Project
 
 생활체육 시설 정보를 조회하고, 예약을 진행하고, 함께 운동할 인원을 모집할 수 있는 Django 기반 웹 플랫폼입니다.  
@@ -66,6 +69,16 @@ BC_Project/
 └─ ERD/
    └─ BC_erd.erd
 ```
+
+## ERD
+
+<img width="3240" height="3240" alt="BC_erd" src="https://github.com/user-attachments/assets/a56bcb01-7e2c-44d3-a3ef-9569767382ab" />
+
+## 발표영상 / 자료
+- 프로젝트 발표 영상 : [발표 영상 링크](https://www.youtube.com/watch?v=LaZt3GMA-yY&feature=youtu.be)
+- 프로젝트 발표 화면 영상 : [발표 화면 영상 링크](https://www.youtube.com/watch?v=XAM7G9b4QOg&feature=youtu.be)
+- 발표 자료(PPT) : [PDF 링크](https://github.com/user-attachments/files/26318886/_.PPT.pptx)
+
 
 ## 설치 및 실행
 
@@ -140,16 +153,7 @@ python manage.py runserver
 - OpenAI 기반 기능을 사용하려면 `OPENAI_API_KEY`가 필요합니다.
 - 개발 설정에서는 `DEBUG = True`, `ALLOWED_HOSTS = ['*']`로 되어 있으므로 배포 전 별도 설정 분리가 필요합니다.
 
-## 향후 개선 포인트
 
-- 배포 환경 설정 분리
-- 비밀키 및 보안 설정 정리
-- 테스트 코드 보강
-- README 내 화면 캡처, 역할 분담, 배포 주소 추가
-
-## 팀 문서에 추가하면 좋은 항목
-
-GitHub README를 더 완성도 있게 보이게 하려면 아래 항목도 함께 넣는 것을 추천합니다.
 
 - 서비스 소개 이미지 또는 메인 화면 캡처
 - 팀원 소개 및 담당 역할
