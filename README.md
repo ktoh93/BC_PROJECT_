@@ -1,5 +1,4 @@
-
-<img width="186" height="91" alt="스크린샷 2025-12-19 143006" src="https://github.com/user-attachments/assets/643a1033-66a7-48c6-b3de-8234cb36d45a" />
+<img width="1044" height="440" alt="image" src="https://github.com/user-attachments/assets/257fa21d-a3e8-4c40-8592-4ab418e7ae58" />
 
 # BC Project
 
@@ -77,8 +76,7 @@ BC_Project/
 ## 발표영상 / 자료
 - 프로젝트 발표 영상 : [발표 영상 링크](https://www.youtube.com/watch?v=LaZt3GMA-yY&feature=youtu.be)
 - 프로젝트 발표 화면 영상 : [발표 화면 영상 링크](https://www.youtube.com/watch?v=XAM7G9b4QOg&feature=youtu.be)
-- 발표 자료(PPT) : [PDF 링크](https://github.com/user-attachments/files/26318886/_.PPT.pptx)
-
+- 발표 자료(PPT) : [PDF 링크][BC_Project.pptx](https://github.com/user-attachments/files/26318904/_.PPT.pptx)
 
 ## 설치 및 실행
 
